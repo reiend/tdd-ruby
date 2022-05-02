@@ -1,1 +1,1 @@
-ruby ../main.rb
+rspec
