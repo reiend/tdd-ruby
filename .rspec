@@ -1,0 +1,6 @@
+-I ./src/variables/
+-I ./src/utils/
+-I ./src/scopes/
+-I ./src/strings/
+
+--format d
