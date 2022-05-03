@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# methods and returns
 # Arithmetic's Template
 module Arithmetic
   module_function

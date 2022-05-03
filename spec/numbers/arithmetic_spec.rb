@@ -80,7 +80,8 @@ RSpec.describe 'Arithmetic' do
     describe 'returns' do
       second_argument = 5
       it 'divide method should return numeric type' do
-        expect { arithmetic.divide(input_1: 5, input_2: second_argument) }.to_not raise_error
+        expect { arithmetic.divide(input_1: 5, input_2: second_argument) }
+          .to_not raise_error
         expect(arithmetic.divide(input_1: 5, input_2: second_argument))
           .to be_an Integer || Float
       end
@@ -90,3 +91,4 @@ RSpec.describe 'Arithmetic' do
     end
   end
 end
+
