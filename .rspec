@@ -1,6 +1,8 @@
--I ./src/variables/
--I ./src/utils/
--I ./src/scopes/
--I ./src/strings/
+
+-I src/variables/
+-I src/scopes/
+-I src/strings/
+-I src/utils/
 
 --format d
+

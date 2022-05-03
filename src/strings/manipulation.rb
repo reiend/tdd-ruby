@@ -37,11 +37,16 @@ book_name = Book.new name: '# herry Petter end the chember ef secrets'
 # p book_name.first_word_title(replacement: 'jake')
 
 # # String manipulation
-# puts book_name.name.reverse       # reverse string
-# puts book_name.name.upcase        # all caps string
-# puts book_name.name.downcase      # all non caps string
-# puts book_name.name.capitalize    # capitailize string, first letter only
-# puts book_name.name.slice(0, 5)   # get first letter to five
+# puts book_name.name.reverse         # reverse string
+# puts book_name.name.upcase          # all caps string
+# puts book_name.name.downcase        # all non caps string
+# puts book_name.name.capitalize      # capitailize string, first letter only
+# puts book_name.name.slice(0, 5)     # get first letter to five
+# puts "    #{book_name.name} ".strip   # removed extrace white spaces left and right
+# puts "    #{book_name.name} ".rstrip  # removed extrace white spaces right
+# puts "    #{book_name.name} ".lstrip  # removed extrace white spaces left
+# p book_name.name.split(' ')       # make an array separated by ' '
+# p book_name.name.split(' ').size  # returns the length of the array
 
 # # return true if book_name.heading_name returns book_name.name is between h1
 # p !book_name.heading_name(tag: 'h1').match(%r{[^<h1>\]]+(?=</h1>)}).nil?
