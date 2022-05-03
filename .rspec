@@ -1,8 +1,8 @@
-
 -I src/variables/
 -I src/scopes/
 -I src/strings/
 -I src/utils/
+-I src/numbers/
 
 --format d
 
