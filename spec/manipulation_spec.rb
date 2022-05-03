@@ -3,7 +3,7 @@
 require 'manipulation'
 
 RSpec.describe 'String Manipulation' do
-  book = Book.new name: 'HARRY PETTER END THE CHEMBER EF SECRETS'
+  book = Book.new name: '# HARRY PETTER END THE CHEMBER EF SECRETS'
   last_letter = book.name[-1] # -1 last letter index
   first_word_replacement = 'Herry'
   replacement_vowel = 'a'
@@ -51,5 +51,11 @@ RSpec.describe 'String Manipulation' do
       is_a_only
     end
     expect(replace_vowel_check.call(vowel: replacement_vowel)).to eql true
+  end
+
+  it 'book.heading_name should return book.name between h1 ' do
+    book.name = "# #{book.name}"
+    heading = book.heading_name tag: 'h1'
+    expect(!heading.match(%r{[^<h1>\]]+(?=</h1>)}).nil?).to be true
   end
 end

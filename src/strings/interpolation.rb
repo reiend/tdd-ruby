@@ -21,6 +21,6 @@ class Greeting < Object
   end
 end
 
-greeting = Greeting.new(name: 'Rspec')
-name = greeting.values_at(:name)
-p name.join
+# greeting = Greeting.new(name: 'Rspec')
+# name = greeting.values_at(:name)
+# p name.join
