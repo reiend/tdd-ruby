@@ -5,19 +5,19 @@
 module Arithmetic
   module_function
 
-  def add(input_1:, input_2:)
-    input_1 + input_2
+  def add(input1:, input2:)
+    input1 + input2
   end
 
-  def subtract(input_1:, input_2:)
-    input_1 - input_2
+  def subtract(input1:, input2:)
+    input1 - input2
   end
 
-  def multiply(input_1:, input_2:)
-    input_1 * input_2
+  def multiply(input1:, input2:)
+    input1 * input2
   end
 
-  def divide(input_1:, input_2:)
-    input_1 / input_2
+  def divide(input1:, input2:)
+    input1 / input2
   end
 end
