@@ -2,7 +2,7 @@
 
 # ApiConnector's Template
 class ApiConnector
-  def initialize(title:, description: nil, url: nil)
+  def initialize(title, description = nil, url = nil)
     @title = title
     @description = description
     @url = url
@@ -15,6 +15,13 @@ end
 
 # SmsConnector's Template
 class SmsConnector < ApiConnector
+  attr_accessor :title, :url
+
+  def initialize(number, title, description, url = nil)
+    super(title, description, url)
+    @number = number
+  end
+
   def send_sms
     puts "#{@title} - sending SMS message"
   end
@@ -43,5 +50,8 @@ class MailerConnector < ApiConnector
   end
 end
 
-sms = SmsConnector.new title: 'Hi, learning ruby'
+sms = SmsConnector.new 5050, 'Hi, learning ruby', '15'
 sms.logger
+
+p sms.title
+p sms.url
